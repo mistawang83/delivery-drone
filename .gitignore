@@ -1,0 +1,44 @@
+# --- Secrets & local config ---
+# Real settings (broker password, etc.). Commit config.example.yaml instead.
+config.yaml
+.env
+*.pem
+*.key
+
+# --- Python ---
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# uv: keep uv.lock committed so everyone gets identical dependencies
+
+# --- Tooling caches ---
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Flight data (logs, recordings, telemetry buffer) ---
+data/
+*.log
+*.tlog
+*.bin
+*.h264
+*.mp4
+*.mjpeg
+
+# --- Simulator (ArduPilot SITL) output ---
+eeprom.bin
+logs/
+terrain/
+
+# --- Editors & OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
